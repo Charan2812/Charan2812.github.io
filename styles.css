@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -27,7 +28,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: #9eb5cc;
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -96,11 +97,13 @@ body {
     width: 100%;
 }
 
+
 .nav-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
+
 
 .bar {
     width: 25px;
@@ -338,9 +341,12 @@ section {
 
 /* About Section */
 .about {
-    background: #f8fafc;
+    background: #88abcc;
 }
 
+.section-subtitle {
+          color: #0c0000;
+}
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -356,7 +362,7 @@ section {
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #0c0000;
     line-height: 1.8;
 }
 
@@ -366,13 +372,13 @@ section {
     gap: 1.5rem;
     margin-top: 2rem;
 }
-
 .highlight-item {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: white;
+    background: #b0cbe6;
+    color: #0c0000;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -395,42 +401,25 @@ section {
 }
 
 .highlight-item p {
-    color: #666;
+    color: #000305;
     margin: 0;
 }
-
-.about-stats {
+.about-image {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: center;
+    background-color:#88abcc;
 }
 
-.stat-item {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.image-placeholder {
+    width: 400px;
+    height: 550px;
+    border-radius: 250px;;
+    display: flex;
 }
-
-.stat-item:hover {
-    transform: translateY(-10px);
-}
-
-.stat-number {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1e40af;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    color: #666;
-    font-weight: 500;
-}
-
 /* Skills Section */
+.skills{
+    background-color: #99b3ca;
+}
 .skills-content {
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -472,7 +461,8 @@ section {
 
 /* Projects Section */
 .projects {
-    background: #f8fafc;
+    background: #a9c0d6;
+    display: flex;
 }
 
 .projects-grid {
@@ -482,7 +472,7 @@ section {
 }
 
 .project-card {
-    background: white;
+    background: rgb(175, 210, 233);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -562,7 +552,7 @@ section {
 }
 
 .project-content p {
-    color: #666;
+    color: #080707;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -583,6 +573,9 @@ section {
 }
 
 /* Education Section */
+.education{
+    background-color: #c0d8ee;
+}
 .education-timeline {
     position: relative;
     margin-bottom: 4rem;
@@ -595,7 +588,7 @@ section {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #e5e7eb;
+    background: #9babca;
     transform: translateX(-50%);
 }
 
@@ -625,7 +618,7 @@ section {
 
 .timeline-content {
     width: 45%;
-    background: white;
+    background: rgb(170, 200, 228);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -649,7 +642,7 @@ section {
 
 .timeline-item:nth-child(even) .timeline-content::before {
     right: -30px;
-    border-left-color: white;
+    border-left-color: rgb(255, 255, 255);
 }
 
 .timeline-date {
@@ -670,7 +663,7 @@ section {
 }
 
 .timeline-content p {
-    color: #555;
+    color: #070606;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -682,7 +675,7 @@ section {
 }
 
 .highlight-badge {
-    background: #e0f2fe;
+    background: #9fbdd1;
     color: #0369a1;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -696,7 +689,6 @@ section {
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
-
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -708,7 +700,7 @@ section {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
-    background: white;
+    background: rgb(150, 184, 204);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -732,14 +724,14 @@ section {
 }
 
 .cert-item p {
-    color: #666;
+    color: #0a0808;
     margin: 0;
     font-size: 0.9rem;
 }
 
 /* Contact Section */
 .contact {
-    background: #f8fafc;
+    background: #d4eaff;
 }
 
 .contact-content {
@@ -770,7 +762,7 @@ section {
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: white;
+    background: rgb(185, 199, 238);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1042,4 +1034,3 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
-
