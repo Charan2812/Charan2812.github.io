@@ -515,7 +515,7 @@ section {
     transition: opacity 0.3s ease;
 }
 
-.project-card:hover .project-overlay {
+.project-overlay {
     opacity: 1;
 }
 
@@ -1034,3 +1034,4 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
