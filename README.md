@@ -1,4 +1,4 @@
-# Charan Teja — Data Analyst | Business Intelligence Developer
+# Charan Teja — Data Analyst | Business Intelligence Analyst
 
 Welcome to my professional portfolio repository.  
 This space serves as the central hub for my analytics projects, dashboards, and technical work, demonstrating my capabilities across **Business Intelligence, Data Analytics, ETL Pipelines, and Dashboard Engineering**.  
