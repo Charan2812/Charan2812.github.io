@@ -22,7 +22,7 @@ I transform raw datasets into **compelling narratives**, enabling business teams
 
 # Featured Portfolio Projects
 
-## **1. Enterprise Retail Intelligence Dashboard — Power BI**
+## 1. Enterprise Retail Intelligence Dashboard — Power BI
 A comprehensive enterprise-level BI solution built for retail performance monitoring.  
 This project demonstrates mastery across data modeling, DAX, ETL, visualization, and analytics storytelling.
 
@@ -43,7 +43,7 @@ This project demonstrates mastery across data modeling, DAX, ETL, visualization,
 ### Tech Stack:
 Power BI · DAX · Power Query · Star Schema · Data Modeling · ETL Pipelines  
 
-## **2. Beijing Air Quality Analysis — Python**
+## 2. Beijing Air Quality Analysis — Python
 A data exploration project analyzing atmospheric pollutants across multiple seasons and years.
 
 ### Key Techniques:
@@ -55,7 +55,7 @@ A data exploration project analyzing atmospheric pollutants across multiple seas
 ### Tech Stack:
 Python · Pandas · NumPy · Matplotlib · Jupyter Notebook  
 
-## **3. Advanced Sales & Customer Dashboard — Excel**
+## 3. Advanced Sales & Customer Dashboard — Excel
 A full analytical dashboard created using Excel with automation and data preprocessing powered by Power Query.
 
 ### Features:
@@ -67,7 +67,7 @@ A full analytical dashboard created using Excel with automation and data preproc
 ### Tech Stack:
 Excel · Power Query · PivotTables · Data Visualization  
 
-## **4. Online Crime Reporting System — Web Application**
+## 4. Online Crime Reporting System — Web Application
 A full-stack system supporting public complaint submissions, case assignment, and status tracking.
 
 ### Features:
@@ -81,25 +81,25 @@ HTML · CSS · JavaScript · PHP · MySQL
 
 # Technical Expertise
 
-## **Data Analytics & BI**
+## Data Analytics & BI
 - Power BI Dashboarding  
 - DAX (Calculated columns, measures, time intelligence)  
 - Power Query ETL and automation  
 - KPI & Metric Design  
 - Exploratory Data Analysis (EDA)  
 
-## **Programming & Databases**
+## Programming & Databases
 - Python (Pandas, NumPy, Matplotlib)  
 - SQL (Joins, Subqueries, Optimization)  
 - Excel (Power Query, PivotTables, Macros)  
 
-## **Data Engineering Concepts**
+## Data Engineering Concepts
 - Star Schema Dimensional Modeling  
 - Fact & Dimension Design  
 - ETL Process Design  
 - Data Quality & Validation Checks  
 
-## **Soft Skills**
+## Soft Skills
 - Analytical Problem Solving  
 - Business Requirement Translation  
 - Storytelling With Data  
