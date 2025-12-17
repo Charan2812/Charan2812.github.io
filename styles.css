@@ -231,7 +231,7 @@ body {
     border-radius: 500px;
 }
 
-.profile-img {
+/*.profile-img {
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
@@ -244,7 +244,7 @@ body {
     backdrop-filter: blur(10px);
     border: 3px solid rgba(255, 255, 255, 0.2);
 }
-
+*/
 .floating-elements {
     position: absolute;
     top: 0;
@@ -1035,5 +1035,6 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
 
 
