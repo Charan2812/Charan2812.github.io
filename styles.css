@@ -226,7 +226,7 @@ body {
 .profile-card {
     position: relative;
     width: 350px;
-    height: 400px;
+    height: 300px;
     margin: 0 auto;
     border-radius: 500px;
 }
@@ -1035,6 +1035,7 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
 
 
 
