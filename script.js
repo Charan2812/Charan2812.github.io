@@ -446,5 +446,167 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --------------------------------------------------------------------------
+    // Interactive Constellation Particle Network (Animated Background)
+    // --------------------------------------------------------------------------
+    const canvas = document.getElementById('canvas-particles');
+    if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animationFrameId;
+        
+        // Define mouse position observer
+        let mouse = { x: null, y: null, radius: 150 };
+        
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+        
+        window.addEventListener('mouseleave', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        // Resize handler
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        
+        // Particle template
+        class Particle {
+            constructor(x, y, dx, dy, size) {
+                this.x = x;
+                this.y = y;
+                this.dx = dx;
+                this.dy = dy;
+                this.size = size;
+                this.baseOpacity = Math.random() * 0.3 + 0.15;
+                this.opacity = this.baseOpacity;
+            }
+            
+            draw() {
+                // Determine color based on active theme
+                const isLight = document.body.classList.contains('light-theme');
+                const dotColor = isLight ? `rgba(13, 148, 136, ${this.opacity})` : `rgba(6, 182, 212, ${this.opacity})`;
+                
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = dotColor;
+                ctx.fill();
+            }
+            
+            update() {
+                // Wall boundaries check
+                if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+                    this.dx = -this.dx;
+                }
+                if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+                    this.dy = -this.dy;
+                }
+                
+                this.x += this.dx;
+                this.y += this.dy;
+                
+                // Interactive mouse boundary proximity glow
+                if (mouse.x !== null && mouse.y !== null) {
+                    let distX = this.x - mouse.x;
+                    let distY = this.y - mouse.y;
+                    let distance = Math.sqrt(distX * distX + distY * distY);
+                    
+                    if (distance < mouse.radius) {
+                        this.opacity = Math.min(0.8, this.baseOpacity + (1 - distance / mouse.radius) * 0.55);
+                    } else {
+                        this.opacity = this.baseOpacity;
+                    }
+                } else {
+                    this.opacity = this.baseOpacity;
+                }
+                
+                this.draw();
+            }
+        }
+        
+        function initParticles() {
+            particles = [];
+            // Dynamically scale particle count depending on viewport width
+            const count = Math.min(65, Math.floor((canvas.width * canvas.height) / 24000));
+            
+            for (let i = 0; i < count; i++) {
+                const size = Math.random() * 1.5 + 1; // tiny fine dots
+                const x = Math.random() * (canvas.width - size * 2) + size;
+                const y = Math.random() * (canvas.height - size * 2) + size;
+                // slow speeds
+                const dx = (Math.random() - 0.5) * 0.35;
+                const dy = (Math.random() - 0.5) * 0.35;
+                
+                particles.push(new Particle(x, y, dx, dy, size));
+            }
+        }
+        
+        function connectParticles() {
+            const maxDistance = 120;
+            const isLight = document.body.classList.contains('light-theme');
+            
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    const distX = particles[a].x - particles[b].x;
+                    const distY = particles[a].y - particles[b].y;
+                    const distance = Math.sqrt(distX * distX + distY * distY);
+                    
+                    if (distance < maxDistance) {
+                        const alpha = (1 - distance / maxDistance) * 0.055; // faint connection lines
+                        const lineColor = isLight ? `rgba(13, 148, 136, ${alpha})` : `rgba(139, 92, 246, ${alpha})`;
+                        
+                        ctx.beginPath();
+                        ctx.strokeStyle = lineColor;
+                        ctx.lineWidth = 0.8;
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+                
+                // Draw connecting lines to mouse position
+                if (mouse.x !== null && mouse.y !== null) {
+                    const distX = particles[a].x - mouse.x;
+                    const distY = particles[a].y - mouse.y;
+                    const distance = Math.sqrt(distX * distX + distY * distY);
+                    
+                    if (distance < mouse.radius) {
+                        const alpha = (1 - distance / mouse.radius) * 0.085;
+                        const lineColor = isLight ? `rgba(13, 148, 136, ${alpha})` : `rgba(6, 182, 212, ${alpha})`;
+                        
+                        ctx.beginPath();
+                        ctx.strokeStyle = lineColor;
+                        ctx.lineWidth = 1;
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+        
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+            }
+            
+            connectParticles();
+            animationFrameId = requestAnimationFrame(animate);
+        }
+        
+        // Initialize
+        resizeCanvas();
+        animate();
+    }
+
     console.log('Cognitive Insights Laboratory Portfolio loaded successfully! 🧠🚀');
 });
