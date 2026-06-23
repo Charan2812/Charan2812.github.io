@@ -47,6 +47,7 @@
 
 /* Light Theme Variables */
 body.light-theme {
+    background-image: none;
     --bg-primary: #f8fafc;
     --bg-secondary: #f1f5f9;
     --bg-tertiary: #e2e8f0;
@@ -127,13 +128,17 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-size: 40px 40px;
-    background-image: 
-        linear-gradient(to right, var(--card-border) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--card-border) 1px, transparent 1px);
     pointer-events: none;
     z-index: -2;
-    transition: background-image var(--transition-normal);
+}
+
+#canvas-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .glow-orb {
@@ -1200,6 +1205,9 @@ body.light-theme .theme-toggle-btn:hover {
 
 .project-notebook {
     background: var(--card-bg);
+    background-image: 
+        radial-gradient(circle at 100% 0%, rgba(6, 182, 212, 0.04), transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(139, 92, 246, 0.04), transparent 50%);
     border: 1px solid var(--card-border);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1218,7 +1226,7 @@ body.light-theme .theme-toggle-btn:hover {
 }
 
 .notebook-header {
-    background: #090d16;
+    background: #000000;
     border-bottom: 1px solid var(--card-border);
     padding: 0.8rem 1.4rem;
     display: flex;
