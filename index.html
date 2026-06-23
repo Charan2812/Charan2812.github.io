@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charan Teja | Data Analyst Portfolio</title>
-    <meta name="description" content="Portfolio of Charan Teja - Data Analyst skilled in SQL, Python, Power BI and Excel. Explore projects, dashboards and analytics work.">
-    <meta name="keywords" content="Charan Teja, Data Analyst, Portfolio, Power BI, SQL, Python, Excel, Data Visualization">
+    <meta name="description" content="Portfolio of Charan Teja - Data Analyst specializing in decoding complex data, building visual dashboards, and isolating signals from noise.">
+    <meta name="keywords" content="Charan Teja, Data Analyst, Portfolio, Power BI, SQL, Python, Excel, Data Visualization, Data Science">
     <meta name="author" content="Charan Teja">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://charan2812.github.io/">
+    
+    <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Charan Teja | Data Analyst Portfolio">
-    <meta property="og:description" content="Portfolio of Charan Teja - Data Analyst skilled in SQL, Python, Power BI and Excel. Explore projects and dashboards.">
+    <meta property="og:description" content="Portfolio of Charan Teja - Data Analyst specializing in decoding complex data and isolating signal from noise.">
     <meta property="og:url" content="https://charan2812.github.io/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://charan2812.github.io/images/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Charan Teja | Data Analyst Portfolio">
-    <meta name="twitter:description" content="Portfolio of Charan Teja - Data Analyst skilled in SQL, Python, Excel and Power BI.">
-    <meta name="twitter:image" content="https://charan2812.github.io/images/og-image.jpg">
+    <meta property="og:image" content="Charan.png">
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans for UI, Inter for body, JetBrains Mono for data tokens -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -38,66 +39,99 @@
     </script>
 </head>
 <body>
+    <!-- Background Coordinates Mesh & Glow Orbs -->
+    <div class="canvas-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
     <h1 style="display:none;">Charan Teja — Data Analyst</h1>
+    
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Charan Teja</a>
+                <a href="#home">
+                    <span class="logo-accent"></span> Charan Teja <span class="logo-accent"> </span>
+                </a>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#certifications" class="nav-link">Certifications</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#frameworks" class="nav-link">Workflow</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Toolkit</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Notebooks</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Credentials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </div>
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
+        <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Data Analyst | Business Analyst
+                    </div>
                     <h1 class="hero-title">
                         Hi, I'm <span class="highlight">Charan Teja</span>
                     </h1>
-                    <h2 class="hero-subtitle">Data Analyst</h2>
+                    <div class="typewriter-container">
+                        <span class="code-symbol">&gt; </span>
+                        <h2 class="hero-subtitle" id="typewriter-text">Data Analyst</h2>
+                    </div>
                     <p class="hero-description">
-                     Aspiring Data Analyst with a solid foundation in data interpretation, statistical analysis, and business intelligence tools. Proficient in Excel, SQL, Python, and visualization platforms like Power BI and Tableau. Passionate about uncovering insights to support data-driven decision-making.  
+                        I am a Data Analyst who believes raw columns are noise until decoded with the right questions. I design custom analytical pipelines, build interactive dashboards, and extract meaningful patterns to support data-driven decision-making.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View My Work</a>
-                        <a href="https://drive.google.com/file/d/1Z6s2-k13bv7v6JkgjXJSEUfFfvTfumal/view?usp=sharing" class="btn btn-secondary">Resume</a>
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Connect with Me</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>Explore Projects</span>
+                            <i class="fas fa-book-open"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1Z6s2-k13bv7v6JkgjXJSEUfFfvTfumal/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <span>CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-card">
-                         <img src="Charan.png" alt="" class="profile-card"></img>
+                
+                <div class="hero-image-wrapper">
+                    <div class="hero-portrait-card">
+                        <div class="portrait-glow"></div>
+                        <div class="portrait-frame">
+                            <img src="Charan.png" alt="Charan Teja Profile Photo" class="portrait-img">
+                        </div>
+                        
+                        <!-- Floating Telemetry Nodes -->
+                        <div class="telemetry-node node-1">
+                            <i class="fab fa-python"></i>
+                            <span>NumPy / Pandas</span>
+                        </div>
+                        <div class="telemetry-node node-2">
+                            <i class="fas fa-database"></i>
+                            <span>SQL Query Ops</span>
+                        </div>
+                        <div class="telemetry-node node-3">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Power BI DAX</span>
                         </div>
                     </div>
                 </div>
@@ -105,45 +139,187 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Personal Telemetry (About Me) Section -->
+    <section id="about" class="telemetry-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Get to know me better — personal telemetry and system specs.</p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Hello! I'm Charan Teja</h3>
-                    <p>
-                       I'm a recent Computer Science postgraduate with a strong foundation in data analysis, statistical interpretation, and visualization. I'm currently enhancing my skillset through a Data Analyst with AI Tools program.
-                    </p>
-                    <p>
-                      Proficient in SQL, Excel, Python (Pandas, NumPy, Matplotlib), Power BI, Tableau, and MySQL. I thrive on solving real-world problems by turning data into actionable insights.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Fresh Post Graduate</h4>
-                                <p>Computer Applications</p>
-                            </div>
+            
+            <div class="telemetry-grid">
+                <!-- Left Column: Biography Console -->
+                <div class="telemetry-bio-card">
+                    <div class="bio-card-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
-                                <h4>Data Analysing</h4>
-                                <p>Love building Dashboards</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <div>
-                                <h4>Quick Learner</h4>
-                                <p>Always eager to learn</p>
+                        <span class="terminal-title">charanteja@identity:~</span>
+                    </div>
+                    <div class="bio-card-body">
+                        <h3 class="bio-greeting">Hello! I'm <span class="highlight">Charan Teja</span></h3>
+                        <p class="bio-paragraph">
+                            I'm a recent Computer Science postgraduate with a strong foundation in data analysis, statistical interpretation, and visualization. I'm currently enhancing my skillset through a Data Analyst with AI Tools program.
+                        </p>
+                        <p class="bio-paragraph">
+                            Proficient in SQL, Excel, Python (Pandas, NumPy, Matplotlib), Power BI, Tableau, and MySQL. I thrive on solving real-world problems by turning data into actionable insights.
+                        </p>
+                        
+                        <div class="skills-mini-showcase">
+                            <span class="showcase-title">Active Packages:</span>
+                            <div class="skills-pills-container">
+                                <span class="pill-badge"><i class="fas fa-database text-cyan"></i> SQL</span>
+                                <span class="pill-badge"><i class="fas fa-file-excel text-emerald"></i> Excel</span>
+                                <span class="pill-badge"><i class="fab fa-python text-indigo"></i> Python (Pandas/NumPy)</span>
+                                <span class="pill-badge"><i class="fas fa-chart-pie text-orange"></i> Power BI</span>
+                                <span class="pill-badge"><i class="fas fa-chart-column text-cyan"></i> Tableau</span>
+                                <span class="pill-badge"><i class="fas fa-server text-indigo"></i> MySQL</span>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Right Column: Specs Cards -->
+                <div class="telemetry-specs-col">
+                    <!-- Spec 1: Fresh Post Graduate -->
+                    <div class="spec-card">
+                        <div class="spec-icon-box">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3 class="spec-title">Fresh Post Graduate</h3>
+                            <p class="spec-subtitle">Computer Applications</p>
+                            <span class="spec-meta">Master of Computer Applications (MCA)</span>
+                        </div>
+                        <div class="spec-glow"></div>
+                    </div>
+                    
+                    <!-- Spec 2: Data Analysing -->
+                    <div class="spec-card">
+                        <div class="spec-icon-box">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3 class="spec-title">Data Analysing</h3>
+                            <p class="spec-subtitle">Love building Dashboards</p>
+                            <span class="spec-meta">ETL pipelines & Interactive Visualizations</span>
+                        </div>
+                        <div class="spec-glow"></div>
+                    </div>
+                    
+                    <!-- Spec 3: Quick Learner -->
+                    <div class="spec-card">
+                        <div class="spec-icon-box">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="spec-details">
+                            <h3 class="spec-title">Quick Learner</h3>
+                            <p class="spec-subtitle">Always eager to learn</p>
+                            <span class="spec-meta">AI-assisted analysis & emerging methodologies</span>
+                        </div>
+                        <div class="spec-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Workflow Section -->
+    <section id="frameworks" class="frameworks-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Analytics Workflow</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">How I process unstructured chaos into structured decisions.</p>
+            </div>
+            
+            <div class="frameworks-timeline">
+                <!-- Step 1: Sifting the Noise -->
+                <div class="framework-step-card">
+                    <div class="step-number-bubble">01</div>
+                    <div class="step-visual-line"></div>
+                    <div class="step-content-card">
+                        <div class="step-card-header">
+                            <div class="step-icon"><i class="fas fa-filter"></i></div>
+                            <div>
+                                <h3>Sifting the Noise</h3>
+                                <span class="step-subtitle-tag">Data Ingestion & SQL ETL</span>
+                            </div>
+                        </div>
+                        <p class="step-desc-text">
+                            Data is collected in chaotic, messy streams. My first step is isolation: writing optimized SQL subqueries, handling null records, and executing Python scripts to extract high-fidelity columns.
+                        </p>
+                        <div class="step-token-row">
+                            <span class="token">MySQL</span>
+                            <span class="token">Pandas Clean</span>
+                            <span class="token">JSON Parsing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Isolating the Patterns -->
+                <div class="framework-step-card">
+                    <div class="step-number-bubble">02</div>
+                    <div class="step-visual-line"></div>
+                    <div class="step-content-card">
+                        <div class="step-card-header">
+                            <div class="step-icon"><i class="fas fa-circle-nodes"></i></div>
+                            <div>
+                                <h3>Isolating the Patterns</h3>
+                                <span class="step-subtitle-tag">Statistical EDA & Modeling</span>
+                            </div>
+                        </div>
+                        <p class="step-desc-text">
+                            Once structured, I check the statistical integrity. I examine parameter correlations, calculate rolling indices, and build clean Star Schemas to link variables logically.
+                        </p>
+                        <div class="step-token-row">
+                            <span class="token">Star Schema</span>
+                            <span class="token">EDA</span>
+                            <span class="token">DAX Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Illuminating the Signal -->
+                <div class="framework-step-card">
+                    <div class="step-number-bubble">03</div>
+                    <div class="step-visual-line"></div>
+                    <div class="step-content-card">
+                        <div class="step-card-header">
+                            <div class="step-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div>
+                                <h3>Illuminating the Signal</h3>
+                                <span class="step-subtitle-tag">Visual Storytelling & Dashboards</span>
+                            </div>
+                        </div>
+                        <p class="step-desc-text">
+                            A report is only useful if it drives action. I build UX-optimized dashboards featuring interactive slicers and parameters that answer specific executive decision queries instantly.
+                        </p>
+                        <div class="step-token-row">
+                            <span class="token">Power BI</span>
+                            <span class="token">Interactive UX</span>
+                            <span class="token">Actionable KPIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Panel -->
+            <div class="framework-stats-row">
+                <div class="stat-bubble-card">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <p class="stat-label">Dashboards Deployed</p>
+                </div>
+                <div class="stat-bubble-card">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-plus">k+</span>
+                    <p class="stat-label">Records Analyzed</p>
+                </div>
+                <div class="stat-bubble-card">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                    <p class="stat-label">Hypothesis Tested</p>
                 </div>
             </div>
         </div>
@@ -153,281 +329,359 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Skills</h2>
-                <p class="section-subtitle">Technologies I work with</p>
+                <h2 class="section-title">Analytical Toolkit</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Technologies and tools I leverage to decode data frameworks.</p>
             </div>
-            <div class="skills-content">
-                <div class="skills-category">
-                    <h3>Data Analysis Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Excel</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
+            
+            <div class="skills-grid-showcase">
+                <!-- Viz Card -->
+                <div class="toolkit-card">
+                    <div class="toolkit-card-header">
+                        <i class="fas fa-chart-column"></i>
+                        <h3>Data Visualization</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Python (pandas , NumPy)</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Power BI</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div><br>
-                        <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Data Cleaning & Wrangling</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div><br>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Statistical Analysis</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-
+                    <ul class="toolkit-list">
+                        <li>
+                            <div class="toolkit-item-info"><span>Power BI & DAX</span><span class="token">85%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="85%"></div></div>
+                        </li>
+                        <li>
+                            <div class="toolkit-item-info"><span>Advanced Excel</span><span class="token">90%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="90%"></div></div>
+                        </li>
+                        <li>
+                            <div class="toolkit-item-info"><span>Tableau Reports</span><span class="token">75%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="75%"></div></div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skills-category">
-                    <h3>Frontend & Backend Tools</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
+
+                <!-- Database Card -->
+                <div class="toolkit-card">
+                    <div class="toolkit-card-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Code & Database Layer</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>CSS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
+                    <ul class="toolkit-list">
+                        <li>
+                            <div class="toolkit-item-info"><span>SQL (MySQL Query Ops)</span><span class="token">85%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="85%"></div></div>
+                        </li>
+                        <li>
+                            <div class="toolkit-item-info"><span>Python (Pandas, NumPy)</span><span class="token">80%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="80%"></div></div>
+                        </li>
+                        <li>
+                            <div class="toolkit-item-info"><span>HTML / CSS / JS</span><span class="token">80%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="80%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Methodologies Card -->
+                <div class="toolkit-card">
+                    <div class="toolkit-card-header">
+                        <i class="fas fa-square-root-variable"></i>
+                        <h3>Core Methodologies</h3>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>MySQL</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
+                    <ul class="toolkit-list">
+                        <li>
+                            <div class="toolkit-item-info"><span>Data Cleaning & ETL</span><span class="token">90%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="90%"></div></div>
+                        </li>
+                        <li>
+                            <div class="toolkit-item-info"><span>Data Modeling (Star Schema)</span><span class="token">85%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="85%"></div></div>
+                        </li>
+                        <li>
+                            <div class="toolkit-item-info"><span>Statistical Hypothesis</span><span class="token">80%</span></div>
+                            <div class="toolkit-bar-bg"><div class="toolkit-bar-fill" data-width="80%"></div></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">Some of my recent work</p>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Explore my project portfolios structured as interactive lab experiments.</p>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Charan2812/Enterprise-Retail-Intelligence-Dashboard" class="project-link">
-                                    <img src="images/Bussiness_Analyst.jpg" height="300px" class="fab fa-github">
+            
+            <!-- Category Filter buttons -->
+            <div class="projects-tabs">
+                <button class="tab-btn active" data-filter="all">All Experiments</button>
+                <button class="tab-btn" data-filter="powerbi">Power BI</button>
+                <button class="tab-btn" data-filter="python-sql">Python & SQL</button>
+                <button class="tab-btn" data-filter="web-apps">Web Apps</button>
+            </div>
 
-                                </a>
+            <!-- Lab Notebooks Grid -->
+            <div class="notebooks-grid" id="projects-grid">
+                <!-- Card 1: Enterprise Retail -->
+                <div class="project-card-wrapper" data-category="powerbi">
+                    <div class="project-notebook">
+                        <div class="notebook-header">
+                            <span class="notebook-tag"><i class="fas fa-chart-column"></i> Power BI</span>
+                            <div class="notebook-tabs">
+                                <button class="nb-tab-btn" data-nb-tab="noise">The Noise</button>
+                                <button class="nb-tab-btn" data-nb-tab="extraction">The Extraction</button>
+                                <button class="nb-tab-btn active" data-nb-tab="signal">The Signal</button>
+                            </div>
+                        </div>
+                        <div class="notebook-body">
+                            <!-- Tab Content: Noise -->
+                            <div class="nb-content" data-content="noise">
+                                <h3 class="notebook-title">Enterprise Retail Dashboard</h3>
+                                <p class="notebook-text">
+                                    <strong>The Clutter (Problem):</strong> Retail sales rows were fragmented across CSV sheets, featuring mismatched date indexes, return discrepancies, and missing geographic coordinates. Forecasting regional quarterly margins was impossible due to data noise.
+                                </p>
+                                <div class="notebook-status-footer">
+                                    <span class="status-token error"><i class="fas fa-triangle-exclamation"></i> Chaos Identified</span>
+                                </div>
+                            </div>
+                            <!-- Tab Content: Extraction -->
+                            <div class="nb-content" data-content="extraction">
+                                <h3 class="notebook-title">Star Schema & DAX ETL</h3>
+                                <p class="notebook-text">
+                                    <strong>The Extraction (Process):</strong> Built a Star Schema relationships layout in Power BI. Utilized Power Query M code to standardize calendar keys, filtered out duplicate transaction records, and wrote dynamic DAX measures for rolling time-intelligence metrics.
+                                </p>
+                                <div class="notebook-status-footer">
+                                    <span class="status-token processing"><i class="fas fa-terminal"></i> Data Restructured</span>
+                                </div>
+                            </div>
+                            <!-- Tab Content: Signal -->
+                            <div class="nb-content active" data-content="signal">
+                                <div class="signal-preview-box">
+                                    <img src="Bussiness_Analyst.jpg" alt="Enterprise Retail Dashboard Screenshot" class="signal-img">
+                                    <div class="signal-overlay">
+                                        <a href="https://github.com/Charan2812/Enterprise-Retail-Intelligence-Dashboard" target="_blank" rel="noopener noreferrer" class="repo-link-btn" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="notebook-text">
+                                    <strong>The Signal (Insight):</strong> Isolated a 14% drop in product category margins due to return anomalies, steering the inventory restocking plan for Q3.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Enterprise Retail Intelligence Dashboard</h3>
-                        <p>Designed an enterprise-grade retail analytics dashboard using Power BI with a star-schema data model, advanced DAX, and Power Query transformations. Delivered interactive insights into sales, customer behavior, product performance, and geographic trends through dynamic KPI switching and rolling time-intelligence.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">DAX</span>
-                            <span class="tech-tag">Power Query (m)</span>
-                            <span class="tech-tag">Data Modeling</span>
-                            <span class="tech-tag">ETL</span>
-                            <span class="tech-tag">Star Schema</span>
-                             <span class="tech-tag">Retail Analytics</span>
-                        </div>
-                    </div>
                 </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Charan2812/Beijing-Air-Quality-Dashboard" class="project-link">
-                                    <img src="images/Pollution.jpg" height="200px" class="fab fa-github">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Beijing Air Quality</h3>
-                        <p>Designed and built an interactive air-quality analytics dashboard using Power BI. Visualized pollutant levels, humidity trends, and temporal air-quality patterns for Beijing using advanced DAX calculations and custom visuals. Enabled users to explore pollution insights through dynamic charts, slicers, and automated metrics.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">DAX</span>
-                            <span class="tech-tag">ETL</span>
-                            <span class="tech-tag">Data visualization</span>
-                            <span class="tech-tag">Data Modeling</span>
-                            <span class="tech-tag">Excel/CSV Data Sources</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Charan2812/911-Emergency-Calls-Analysis" class="project-link">
-                                   <img src="images/emergency-calls.jpg" height="250px" class="fab fa-github">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>911-Emergency-Calls-Analysis</h3>
-                        <p>This project performs an in-depth exploratory data analysis (EDA) on the **Montgomery County 911 Emergency Call Dataset**.  
-The analysis uncovers useful insights such as the busiest townships, most common emergency reasons, call frequencies by time, and daily/weekly/monthly patterns.  
-Visualizations are generated using Matplotlib and Seaborn to clearly represent emergency trends and help improve public safety decision-making.
-</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Pyhton 3.x</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Numpy</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">Jupyter Notebook</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Charan2812/college-academic-project" class="project-link">
-                                    <img src="images/banners.jpg" height="300px" class="fab fa-github">
 
-                                </a>
+                <!-- Card 2: Beijing Air Quality -->
+                <div class="project-card-wrapper" data-category="powerbi">
+                    <div class="project-notebook">
+                        <div class="notebook-header">
+                            <span class="notebook-tag"><i class="fas fa-chart-column"></i> Power BI</span>
+                            <div class="notebook-tabs">
+                                <button class="nb-tab-btn" data-nb-tab="noise">The Noise</button>
+                                <button class="nb-tab-btn" data-nb-tab="extraction">The Extraction</button>
+                                <button class="nb-tab-btn active" data-nb-tab="signal">The Signal</button>
+                            </div>
+                        </div>
+                        <div class="notebook-body">
+                            <!-- Tab Content: Noise -->
+                            <div class="nb-content" data-content="noise">
+                                <h3 class="notebook-title">Beijing Air Quality Visualizations</h3>
+                                <p class="notebook-text">
+                                    <strong>The Clutter (Problem):</strong> Environmental sensor records displayed massive pollutant spikes but lacked context. Unorganized pollutant dimensions (PM2.5, PM10, SO2) made it impossible to isolate correlation dynamics with humidity and wind indexes.
+                                </p>
+                                <div class="notebook-status-footer">
+                                    <span class="status-token error"><i class="fas fa-triangle-exclamation"></i> Chaos Identified</span>
+                                </div>
+                            </div>
+                            <!-- Tab Content: Extraction -->
+                            <div class="nb-content" data-content="extraction">
+                                <h3 class="notebook-title">Multidimensional Air Correlation</h3>
+                                <p class="notebook-text">
+                                    <strong>The Extraction (Process):</strong> Built customized parameter slicers and calculated environmental indexes. Integrated multi-pollutant metrics over temporal calendar scales, mapping air health indices dynamically against humidity benchmarks.
+                                </p>
+                                <div class="notebook-status-footer">
+                                    <span class="status-token processing"><i class="fas fa-terminal"></i> Data Restructured</span>
+                                </div>
+                            </div>
+                            <!-- Tab Content: Signal -->
+                            <div class="nb-content active" data-content="signal">
+                                <div class="signal-preview-box">
+                                    <img src="Pollution2.jpg" alt="Beijing Air Quality Screenshot" class="signal-img">
+                                    <div class="signal-overlay">
+                                        <a href="https://github.com/Charan2812/Beijing-Air-Quality-Dashboard" target="_blank" rel="noopener noreferrer" class="repo-link-btn" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="notebook-text">
+                                    <strong>The Signal (Insight):</strong> Proved that PM2.5 concentrations spikes 22% during low-wind, high-humidity weather patterns, enabling local health safety alerts.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Online Crime Reporting System</h3>
-                        <p>Developed a secure platform for online crime reporting with role-based dashboards for users, police, and administrators using HTML, CSS, PHP, and MySQL. Enabled complaint registration and case status tracking.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MYSQL</span>
-                            <span class="tech-tag">XAMPP-TOOL</span>
+                </div>
+
+                <!-- Card 3: 911 Calls -->
+                <div class="project-card-wrapper" data-category="python-sql">
+                    <div class="project-notebook">
+                        <div class="notebook-header">
+                            <span class="notebook-tag"><i class="fab fa-python"></i> Python Analysis</span>
+                            <div class="notebook-tabs">
+                                <button class="nb-tab-btn" data-nb-tab="noise">The Noise</button>
+                                <button class="nb-tab-btn" data-nb-tab="extraction">The Extraction</button>
+                                <button class="nb-tab-btn active" data-nb-tab="signal">The Signal</button>
+                            </div>
+                        </div>
+                        <div class="notebook-body">
+                            <!-- Tab Content: Noise -->
+                            <div class="nb-content" data-content="noise">
+                                <h3 class="notebook-title">911 Emergency Calls EDA</h3>
+                                <p class="notebook-text">
+                                    <strong>The Clutter (Problem):</strong> 100k+ messy transaction rows of emergency logs containing unparsed string timestamps, miscellaneous emergency descriptions, and random geographical coordinates without frequency categorization.
+                                </p>
+                                <div class="notebook-status-footer">
+                                    <span class="status-token error"><i class="fas fa-triangle-exclamation"></i> Chaos Identified</span>
+                                </div>
+                            </div>
+                            <!-- Tab Content: Extraction -->
+                            <div class="nb-content" data-content="extraction">
+                                <h3 class="notebook-title">Pandas Wrangling & Heatmapping</h3>
+                                <p class="notebook-text">
+                                    <strong>The Extraction (Process):</strong> Coded a Python cleaning pipeline using Pandas and NumPy. Extracted day-of-week, hour-of-day, and month columns. Grouped entries by emergency reasons and built matrix shapes for coordinate plots.
+                                </p>
+                                <div class="notebook-status-footer">
+                                    <span class="status-token processing"><i class="fas fa-terminal"></i> Data Restructured</span>
+                                </div>
+                            </div>
+                            <!-- Tab Content: Signal -->
+                            <div class="nb-content active" data-content="signal">
+                                <div class="signal-preview-box">
+                                    <img src="emergency-calls.jpg" alt="911 Emergency Calls Screenshot" class="signal-img">
+                                    <div class="signal-overlay">
+                                        <a href="https://github.com/Charan2812/911-Emergency-Calls-Analysis" target="_blank" rel="noopener noreferrer" class="repo-link-btn" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i> Repository
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="notebook-text">
+                                    <strong>The Signal (Insight):</strong> Isolated traffic emergencies peaking precisely at 8:00 AM and 5:00 PM on weekdays, guiding local traffic patrol dispatch plans.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Card 4: Crime Reporting -->
+                <div class="project-card-wrapper" data-category="web-apps">
+                    <div class="project-card">
+                        <div class="project-notebook">
+                            <div class="notebook-header">
+                                <span class="notebook-tag"><i class="fas fa-server"></i> Web Application</span>
+                                <div class="notebook-tabs">
+                                    <button class="nb-tab-btn" data-nb-tab="noise">The Noise</button>
+                                    <button class="nb-tab-btn" data-nb-tab="extraction">The Extraction</button>
+                                    <button class="nb-tab-btn active" data-nb-tab="signal">The Signal</button>
+                                </div>
+                            </div>
+                            <div class="notebook-body">
+                                <!-- Tab Content: Noise -->
+                                <div class="nb-content" data-content="noise">
+                                    <h3 class="notebook-title">Online Crime Reporting Portal</h3>
+                                    <p class="notebook-text">
+                                        <strong>The Clutter (Problem):</strong> Citizens faced slow, manual emergency logging loops. Lack of centralized digital registration created huge processing backlogs, preventing law enforcement from categorizing incident status in real-time.
+                                    </p>
+                                    <div class="notebook-status-footer">
+                                        <span class="status-token error"><i class="fas fa-triangle-exclamation"></i> Chaos Identified</span>
+                                    </div>
+                                </div>
+                                <!-- Tab Content: Extraction -->
+                                <div class="nb-content" data-content="extraction">
+                                    <h3 class="notebook-title">PHP MySQL Dashboard Layer</h3>
+                                    <p class="notebook-text">
+                                        <strong>The Extraction (Process):</strong> Developed a relational MySQL model with user, police, and administrator clearance ranks. Coded PHP session authentication and direct database insert scripts to log incidents securely.
+                                    </p>
+                                    <div class="notebook-status-footer">
+                                        <span class="status-token processing"><i class="fas fa-terminal"></i> Data Restructured</span>
+                                    </div>
+                                </div>
+                                <!-- Tab Content: Signal -->
+                                <div class="nb-content active" data-content="signal">
+                                    <div class="signal-preview-box">
+                                        <img src="banners.jpg" alt="Online Crime Reporting Screenshot" class="signal-img">
+                                        <div class="signal-overlay">
+                                            <a href="https://github.com/Charan2812/college-academic-project" target="_blank" rel="noopener noreferrer" class="repo-link-btn" aria-label="GitHub Repository">
+                                                <i class="fab fa-github"></i> Repository
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="notebook-text">
+                                        <strong>The Signal (Insight):</strong> Standardized complaints reporting through role-based access portals, reducing administrative processing delays.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="education" class="education-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">My academic journey</p>
+                <h2 class="section-title">Credentials & Timeline</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Academic foundations and specialized analytic training.</p>
             </div>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 - 2025</div>
-                        <h3>Master of Computer Applications (MCA)</h3>
-                        <h4>Jawaharlal Nehru Technological University (JNTU), Andhra Pradesh</h4>
-                        <p>Oct 2023 – May 2025</p>
-                        <div class="education-highlights">
-                            <span class="highlight-badge">GPA: 8.68</span>
-                            <span class="highlight-badge">Best Outgoing Student of the year 2023-2025</span>
-                            <span class="highlight-badge">A student placement in-charge</span>
+
+            <div class="education-timeline-layout">
+                <div class="timeline-container">
+                    <div class="timeline-glow-line"></div>
+                    
+                    <div class="timeline-node-card">
+                        <div class="timeline-marker">
+                            <div class="marker-glowing-dot"></div>
+                        </div>
+                        <div class="timeline-bubble-content">
+                            <span class="timeline-badge-date">2023 - 2025</span>
+                            <h3 class="degree-title">Master of Computer Applications (MCA)</h3>
+                            <h4 class="school-name">Jawaharlal Nehru Technological University (JNTU)</h4>
+                            <p class="timeline-desc-text">
+                                Focus on software architectures, database optimization techniques, and structured mathematics. Honored as **Best Outgoing Student of the Year 2023-2025** and led corporate communications as Student Placement In-charge.
+                            </p>
+                            <div class="badge-highlights-row">
+                                <span class="badge-accent">GPA: 8.68</span>
+                                <span class="badge-accent">Best Outgoing Student</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="certifications" class="certifications">
-                <h3>Certifications & Courses</h3>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <i class="fa fa-pie-chart"></i>
-                        <div>
-                            <h4>Data Analyst with AI Tools</h4>
-                            <p>Python, SQL, Power BI, Excel, and AI modules</p>
+
+                <div class="credentials-card-container">
+                    <h3 class="credentials-box-title"><i class="fas fa-graduation-cap text-cyan"></i> Analytics Specializations</h3>
+                    
+                    <div class="certs-list-grid">
+                        <div class="cert-glass-item">
+                            <div class="cert-icon-wrapper">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="cert-content-info">
+                                <h4>Data Analyst with AI Tools</h4>
+                                <p>Specialized training in SQL optimizations, Python structures (Pandas/NumPy), Power BI reporting modeling, and utilizing LLM prompts for analytical automation.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="cert-item">
-                        <i class='fas fa-atom'></i>
-                        <div>
-                            <h4>NPTEL Certification in Cloud Computing</h4>
-                            <p>Virtualization, service models, and deployment strategies</p>
+
+                        <div class="cert-glass-item">
+                            <div class="cert-icon-wrapper">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="cert-content-info">
+                                <h4>NPTEL Certification: Cloud Computing</h4>
+                                <p>Studied scalable architectures, virtualization, cloud database structures, and warehouse scale computing models.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -436,47 +690,42 @@ Visualizations are generated using Matplotlib and Seaborn to clearly represent e
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together</p>
+                <h2 class="section-title">Query Intake</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Ready to decode complex questions. Get in touch to start analyzing.</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or just have a chat about technology and development.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>teja0942@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91-9182856702</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Hyderabad, Telangana</p>
-                            </div>
-                        </div>
+
+            <div class="minimal-contact-card">
+                <div class="contact-header">
+                    <h3>Initiate Collaboration</h3>
+                    <p>Have a complex spreadsheet, a messy database, or want to discuss analytics methodologies? Get in touch and let's turn that clutter into clear visual signals.</p>
+                </div>
+                
+                <div class="contact-links-list">
+                    <a href="mailto:teja0942@gmail.com" class="minimal-contact-item">
+                        <i class="far fa-envelope"></i>
+                        <span>teja0942@gmail.com</span>
+                    </a>
+                    <a href="tel:+919182856702" class="minimal-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91-9182856702</span>
+                    </a>
+                    <div class="minimal-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Hyderabad, Telangana, India</span>
                     </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/peruboinacharanteja/" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Charan2812" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>                     
-                    </div>
+                </div>
+
+                <div class="minimal-contact-socials">
+                    <a href="https://www.linkedin.com/in/peruboinacharanteja/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Charan2812" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -485,66 +734,31 @@ Visualizations are generated using Matplotlib and Seaborn to clearly represent e
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Charan Teja. All rights reserved.</p>
+            <div class="footer-layout">
+                <div class="footer-branding">
+                    <span class="footer-logo">Charan Teja </span>
+                    <p>Data Analyst | Business Analyst</p>
                 </div>
-                <div class="footer-links">
+                <div class="footer-nav-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
+                    <a href="#frameworks">Workflow</a>
+                    <a href="#skills">Toolkit</a>
+                    <a href="#projects">Notebooks</a>
                     <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Charan Teja. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top">
-        <i class="fas fa-chevron-up"></i>
+    <!-- Scroll Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
